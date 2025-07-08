@@ -1,5 +1,5 @@
 # Product Table
-## Date:07-07-2025
+## Date:08-07-2025
 ## Sachin B
 ## 212222060207
 
@@ -56,9 +56,11 @@ Keep the table design strictly in HTML for simplicity.
 <html>
 <head>
     <title>Product Table</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <table>
+        <caption>Available Products</caption>
         <thead>
             <tr>
                 <th>Product Name</th>
@@ -94,7 +96,63 @@ Keep the table design strictly in HTML for simplicity.
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/3e7baf21-d986-494c-a3cc-33e03af059bc)
+
+![Screenshot 2025-07-08 131525](https://github.com/user-attachments/assets/cf749889-cdfa-4843-b882-c2372b1733b5)
+
+## Css Code:
+```
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 10px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+th {
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+    transition: background 0.2s;
+}
+```
 
 
 ## Result:
